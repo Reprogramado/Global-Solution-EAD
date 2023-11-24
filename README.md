@@ -11,7 +11,7 @@ João Vitor Santiago de Oliveira Braz | RM 95749
 Douglas Welber | RM 94269
 </p>
 <h1 align="center"> Reload Care </h1>
-<p align="center"> Aplicativo de controle de rotina focado em descobrir oque o beneficiário está sentindo.com CRUD ultilizando banco de dados + algumas funcionalidades em .NET MVC<br/></p>
+<p align="center"> Aplicativo de controle de rotina focado em descobrir oque o beneficiário está sentindo com CRUD ultilizando banco de dados + algumas funcionalidades em .NET MVC<br/></p>
 
 
 <p align="center">

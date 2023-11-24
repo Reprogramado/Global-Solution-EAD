@@ -1,0 +1,29 @@
+﻿cadastrar view medico
+@using static GS.Models.Medico;
+@model GS.Models.Medico
+
+@{
+    ViewData["Title"] = "Cadastrar";
+}
+
+<h1>Cadastro de Médico</h1>
+
+<form asp-action="cadastrar">
+    <div class="mb-3">
+        <label asp-for="Nome"></label>
+        <input asp-for="Nome" class="form-control" />
+    </div>
+    <div class="mb-3">
+        <label asp-for="Especial"></label>
+        <select asp-for="Especial" asp-items="@Html.GetEnumSelectList<Especializacao>()" class="form-control">
+            <option>Selecione sua especialização</option>
+        </select>
+    </div>
+    <div class="mb-3">
+        <input asp-for="Ativo" />
+        <label asp-for="Ativo"></label>
+    </div>
+
+    <button class="btn btn-primary">Cadastrar</button>
+</form>
+

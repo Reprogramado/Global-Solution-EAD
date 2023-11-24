@@ -1,0 +1,21 @@
+﻿@model GS.Models.Atendimento
+
+@{
+    ViewData["Title"] = "Cadastrar";
+}
+
+<h1>Cadastro de Atendimento</h1>
+<a asp-action="index">Atendimento</a>
+
+@if (TempData["msg"] != null)
+{
+    <div class="alert alert-success">
+        @TempData["msg"]
+    </div>
+}
+
+<form asp-action="cadastrar">
+    <partial name="_Form" />
+    <button class="btn btn-outline-primary">Cadastrar</button>
+</form>
+

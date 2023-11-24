@@ -1,0 +1,19 @@
+﻿@model GS.Models.Medico
+
+<h2>Excluir Médico</h2>
+
+<div>
+    <h4>Tem certeza que deseja excluir o seguinte médico?</h4>
+    <h4>Nome: @Model.Nome</h4>
+    <h4>Especialidade: @Model.Especial</h4>
+    <h4>Ativo: @Model.Ativo</h4>
+    
+</div>
+
+<form asp-action="Excluir">
+    <input type="hidden" asp-for="MedicoId" />
+    <div class="form-group">
+        <input type="submit" value="Excluir" class="btn btn-danger" />
+        <a asp-action="Index">Cancelar</a>
+    </div>
+</form>

@@ -1,0 +1,18 @@
+﻿@model GS.Models.Atendimento
+
+@{
+    ViewData["Title"] = "Editar";
+}
+
+<h1>Dor do paciente: @Model.Dor</h1>
+
+<form asp-action="editar">
+
+    <input asp-for="AtendimentoId" />
+
+    <partial name="_Form" />
+
+    <button class="btn btn-outline-primary">Editar</button>
+
+</form>
+

@@ -1,0 +1,42 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Views\Medico\Add.cshtml.cs" />
+    <Compile Remove="Views\Medico\Detalhes.cshtml.cs" />
+    <Compile Remove="Views\Medico\Editar.cshtml.cs" />
+    <Compile Remove="Views\Medico\Excluir.cshtml.cs" />
+    <Compile Remove="Views\Medico\Index1.cshtml.cs" />
+    <Compile Remove="Views\Medico\Info.cshtml.cs" />
+    <Compile Remove="Views\Medico\_Form.cshtml.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="Views\Medico\Add.cshtml" />
+    <Content Remove="Views\Medico\Detalhes.cshtml" />
+    <Content Remove="Views\Medico\Editar.cshtml" />
+    <Content Remove="Views\Medico\Excluir.cshtml" />
+    <Content Remove="Views\Medico\Index1.cshtml" />
+    <Content Remove="Views\Medico\Info.cshtml" />
+    <Content Remove="Views\Medico\_Form.cshtml" />
+    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap.min %282%29.css" />
+    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap.min.css" />
+    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map" />
+  </ItemGroup>
+
+  
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+</Project>

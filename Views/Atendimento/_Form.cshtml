@@ -1,0 +1,26 @@
+﻿@model GS.Models.Atendimento
+
+<div class="mb-3">
+    <label asp-for="Dor"></label>
+    <input asp-for="Dor" class="form-control" />
+</div>
+<div class="mb-3">
+    <label asp-for="LocalDor"></label>
+    <textarea asp-for="LocalDor" class="form-control"></textarea>
+</div>
+<div class="mb-3">
+    <label asp-for="Fator"></label>
+    <input asp-for="Fator" class="form-control" />
+</div>
+<div class="mb-3">
+    <label asp-for="Categoria"></label>
+    <select asp-for="Categoria" asp-items="@Html.GetEnumSelectList<CategoriaDor>()" class="form-control">
+        <option>Selecione</option>
+    </select>
+</div>
+<div class="mb-3">
+    <label asp-for="Medico"></label>
+    <select class="form-select" asp-for="MedicoId" asp-items="@ViewBag.medicos">
+        <option>Selecione</option>
+    </select>
+</div>

@@ -1,0 +1,31 @@
+﻿@model List<Beneficiario>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Beneficiários</h1>
+
+@if (TempData["msg"] != null)
+{
+    <div class="alert alert-success">
+        @TempData["msg"]
+    </div>
+}
+
+<table class="table">
+    <tr>
+        <th>Nome</th>
+        <th>Data Nascimento</th>
+        <th>RedeAtendimento</th>
+        <th>Usa alguma substancia química?</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Nome</td>
+            <td>@item.DataNascimento.ToShortDateString()</td>
+            <td>@item.RedeAtendimento</td>
+            <td>@(item.UsoSubstancias ? "Sim" : "Não")</td>
+        </tr>
+    }
+</table>

@@ -1,0 +1,42 @@
+﻿@model GS.Models.Atendimento
+
+@{
+    ViewData["Title"] = "Info";
+}
+
+<h1>@Model.Dor</h1>
+
+<table class="table table-striped">
+    <tr>
+        <th>Dor</th>
+        <th>Local da dor</th>
+        <th>Fator desencadeante da dor</th>
+        <th>Categoria</th>
+        <th>Medico</th>
+    </tr>
+    <tr>
+        <td>@Model.Dor</td>
+        <td>@Model.LocalDor</td>
+        <td>@Model.Fator</td>
+        <td>@Model.Categoria</td>
+        <td>@Model.Medico?.Nome</td>
+    </tr>
+</table>
+
+<div class="d-flex justify-content-between">
+    <h2>Beneficiários</h2>
+    <a asp-action="add" asp-route-id="@Model.AtendimentoId"
+       class="btn btn-primary h-25">+</a>
+</div>
+
+<table class="table">
+    <tr>
+        <th>Nome</th>
+    </tr>
+    @foreach (var item in ViewBag.beneficiarios)
+    {
+        <tr>
+            <td>@item.Nome</td>
+        </tr>
+    }
+</table>

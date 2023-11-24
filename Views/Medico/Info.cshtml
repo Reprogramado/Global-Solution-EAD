@@ -1,0 +1,17 @@
+﻿@model GS.Models.Medico
+
+@{
+    ViewData["Title"] = "Info";
+}
+
+<h1>Detalhes do Médico: @Model.Nome</h1>
+
+<div>
+    <h4>Nome: @Model.Nome</h4>
+    <h4>Especialização: @Model.Especial</h4>
+    <h4>Ativo: @Model.Ativo</h4>
+</div>
+
+<p>
+    <a asp-action="Index">Voltar para a lista</a>
+</p>

@@ -1,0 +1,30 @@
+﻿@model GS.Models.Beneficiario
+
+@{
+    ViewData["Title"] = "Cadastrar";
+}
+
+<h1>Cadastro de Beneficiario</h1>
+
+<form asp-action="cadastrar">
+    <div class="mb-3">
+        <label asp-for="Nome"></label>
+        <input asp-for="Nome" class="form-control" />
+    </div>
+    <div class="mb-3">
+        <label asp-for="DataNascimento"></label>
+        <input asp-for="DataNascimento" class="form-control" />
+    </div>
+    <div class="mb-3">
+        <label asp-for="RedeAtendimento"></label>
+        <select asp-for="RedeAtendimento" asp-items="@Html.GetEnumSelectList<RedeAtendimento>()" class="form-control">
+            <option>Selecione</option>
+        </select>
+    </div>
+    <div class="mb-3">
+        <input asp-for="UsoSubstancias"/>
+        <label asp-for="UsoSubstancias"></label>
+    </div>
+    <button class="btn btn-primary">Cadastrar</button>
+</form>
+

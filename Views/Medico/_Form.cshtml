@@ -1,0 +1,19 @@
+﻿@model GS.Models.Medico
+
+<div class="mb-3">
+    <label asp-for="Nome"></label>
+    <input asp-for="Nome" class="form-control" />
+    <span asp-validation-for="Nome" class="text-danger"></span>
+</div>
+<div class="mb-3">
+    <label asp-for="Especial"></label>
+    <select asp-for="Especial" asp-items="@Html.GetEnumSelectList<GS.Models.Medico.Especializacao>()" class="form-control">
+        <option>Selecione</option>
+    </select>
+    <span asp-validation-for="Especial" class="text-danger"></span>
+</div>
+<div class="mb-3">
+    <label asp-for="Ativo"></label>
+    <input asp-for="Ativo" class="form-control" />
+    <span asp-validation-for="Ativo" class="text-danger"></span>
+</div>

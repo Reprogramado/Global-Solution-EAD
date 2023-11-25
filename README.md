@@ -1,14 +1,14 @@
 ##  Integrantes
 <p>
-Daniel Santos | RM 94265
+Daniel Santos | RM 94265 | 2 TDST
 <br>
-Tarcisio Couto | RM 94717
+Tarcisio Couto | RM 94717 | 2 TDST
 <br>
-Felipe Jardim | RM 88383
+Felipe Jardim | RM 88383 
+<br>| 2 TDST
+João Vitor Santiago de Oliveira Braz | RM 95749 | 2 TDST
 <br>
-João Vitor Santiago de Oliveira Braz | RM 95749
-<br>
-Douglas Welber | RM 94269
+Douglas Welber | RM 94269 | 2 TDSS
 </p>
 <h1 align="center"> Reload Care </h1>
 <p align="center"> Aplicativo de controle de rotina focado em descobrir oque o beneficiário está sentindo com CRUD ultilizando banco de dados + algumas funcionalidades em .NET MVC<br/></p>
